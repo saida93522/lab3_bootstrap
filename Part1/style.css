@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 80% ;
+    padding: 30px 0;
+    background-color: #eee;
+}
+h1{
+    font-size: 2.5em;
+    padding-bottom: 2.3rem;
+    color: #000;
+}
+a{
+    display: block;
+    font-size: 2.5rem;
+    padding-bottom: 1.3em;
+    text-decoration: none;
+    
+}
+#real-alert{
+    color: #c23616;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#test-only span{
+    color: #192a56 ;
+    border: 3px solid #e1b12c;
+    background-color: #44bd32;
+    font-weight: 900;
+}
