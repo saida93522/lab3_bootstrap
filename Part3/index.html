@@ -22,22 +22,24 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-4">
-          Dice Game<img class="dice" src="/Part3/style/images/dice1.png" />
+          Dice Game<img class="dice" src="/Part3/style/images/dice.png" />
         </h1>
       </div>
 
       <!-- code sample -->
 
       <div class="row">
-        <div class="col-lg">
+        <div class="col-sm">
           <p>
             This is a two player game. A player rolls a dice. Each time you roll
             a dice, it gets added to your current score. The player to reach 100
             total point wins. However, if you roll a dice of 1, you lose your
-            current score and the second player gets the roll. You can choose to
+            current score and the other player gets the roll. You can choose to
             hold a score and add it to your total score.
           </p>
-          <pre class="">
+          <div class="col-12 col-2">
+          <pre>
+  
             <code>
             roll_btn.addEventListener('click',function(){
             if (playing) {
@@ -50,19 +52,27 @@
                   
             <span> // 3. Check if rolled 1:</span>
             if (dice !== 1) {
-            // if not, add dice to current score
-                currentScore += dice;
-                document.getElementById(`current--${activePlayer}`
+            <span>// if not, add dice to current score</span>
+               currentScore += dice;
+               document.getElementById(`current--${activePlayer}`
                 ).textContent = currentScore;
             } else {
-        <span> //switch to next player </span>
-                        
-                        switchPlayer();
-                      }
-                    }
-                  });
+        <span> //switch to next player </span> 
+                  switchPlayer();
+              }
+            }
+        });
             </code>
-        </pre>
+          </div>
+
+          </pre>
+          <div>
+            <img
+              class="gameShot"
+              src="/Part3/style/images/GameShot.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
